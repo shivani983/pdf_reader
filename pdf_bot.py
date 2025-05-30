@@ -58,6 +58,7 @@ def build_vector_store(chunks):
     import chromadb
     from chromadb.config import Settings
     client = chromadb.Client(Settings(chroma_db_impl="duckdb", persist_directory=".chromadb"))
+    st.info("ChromaDB initialized with DuckDB")
 
 
     # ✅ This avoids the "already exists" error
