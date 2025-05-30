@@ -56,10 +56,9 @@ def get_euri_embeddings(texts):
 
 def build_vector_store(chunks):
     import chromadb
-    client = chromadb.Client(Settings(
-    chroma_db_impl="duckdb",
-    persist_directory=".chromadb"
-))
+    from chromadb.config import Settings
+    client = chromadb.Client(Settings(chroma_db_impl="duckdb", persist_directory=".chromadb"))
+
 
     # ✅ This avoids the "already exists" error
     collection = client.get_or_create_collection(name="pdf_chunks")
