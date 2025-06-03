@@ -6,9 +6,6 @@ import chromadb
 from chromadb.config import Settings
 
 
-EURI_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5Y2ViOTI0MS00MDllLTQ3N2ItOTZhNy1mOTFmOTcyYjEyMWMiLCJlbWFpbCI6InNoaXZhbml2aXJhbmc5ODNAZ21haWwuY29tIiwiaWF0IjoxNzQ0ODE1NDY2LCJleHAiOjE3NzYzNTE0NjZ9.1VE4DJgC6wBDk_bMmt5k_W7SeEl_NbF4iTTw5NWHeRk"
-EURI_CHAT_URL = "https://api.euron.one/api/v1/euri/alpha/chat/completions"
-EURI_EMBED_URL = "https://api.euron.one/api/v1/euri/alpha/embeddings"
 
 
 conversation_memory = []
